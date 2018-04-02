@@ -1,0 +1,6 @@
+(executable
+ ((name test)
+  (libraries
+   (rpc_tk))
+ )
+)
