@@ -1,9 +1,9 @@
 type implementation = unit -> unit
 
 let implement interface () =
-  let top = Tk.openTK () in
-  Tk.Wm.title_set top interface.Idl.Interface.description;
-  let b = Tk.Button.create ~test:"Send" ~command:(fun () -> ()) top in
+  let top = Tk.openTk () in
+  Wm.title_set top interface.Idl.Interface.name;
+  let b = Button.create ~text:"Send" ~command:(fun () -> ()) top in
   Tk.pack [Tk.coe b];
   Tk.mainLoop ();;
 
@@ -15,6 +15,6 @@ type 'a fn = unit
 
 let (@->) param fn = ()
 
-let returning result error = () 
+let returning result error = ()
 
 let declare name description typ = ()

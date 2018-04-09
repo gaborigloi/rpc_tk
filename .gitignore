@@ -1,2 +1,4 @@
 /.pijul
-/_build
+_build
+.merlin
+*.install

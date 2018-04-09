@@ -2,6 +2,7 @@
  ((name rpc_tk)
   (public_name rpc_tk)
   (libraries
-   (rpclib.idl))
+   (rpclib.idl
+    labltk))
  )
 )
