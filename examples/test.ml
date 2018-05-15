@@ -24,6 +24,7 @@ module Interface(R: Idl.RPC) = struct
 end
 
 let () =
-  let module Gui = Interface(Rpc_tk.Guigen) in
-  Gui.implementation ();
-  ()
+  let module RPC = Rpc_tk.Guigen.GenGui () in
+  let module Gui = Interface(RPC) in
+  Gui.concat (fun a b -> a ^ b);
+  Rpc_tk.Guigen.creategui Gui.description Gui.implementation
