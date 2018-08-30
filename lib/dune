@@ -1,0 +1,8 @@
+(library
+ (name rpc_tk)
+ (public_name rpc_tk)
+ (libraries
+  rpclib.core
+  rpclib.json
+  labltk)
+)

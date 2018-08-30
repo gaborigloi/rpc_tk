@@ -13,6 +13,9 @@ license: "CC0"
 homepage: "https://github.com/gaborigloi/"
 bug-reports: "https://github.com/gaborigloi/"
 build: [
-  ["jbuilder" "build" "-p" name "-j" jobs]
+  ["dune" "build" "-p" name "-j" jobs]
 ]
-depends: [ "rpc" ]
+depends: [
+  "labltk"
+  "rpc"
+]

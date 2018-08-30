@@ -35,7 +35,7 @@ module GenGui () = struct
 
   let returning result error = Returning (result, error)
 
-  let declare name description ty impl =
+  let declare name _description ty impl =
     let buildguifn boxedwidget =
       let W widget = boxedwidget in
       let method_name = Label.create widget ~text:name in
@@ -57,10 +57,10 @@ module GenGui () = struct
             let arg = Rpcmarshal.unmarshal ty (Jsonrpc.of_string (Entry.get e)) in
             match arg with
             | Result.Ok arg -> arg
-            | Result.Error (`Msg m) -> failwith "Marshal error"
+            | Result.Error (`Msg _m) -> failwith "Marshal error"
           in
           inner f (fun () -> (impl ()) (arg ()))
-        | Returning (r, e) ->
+        | Returning (r, _e) ->
           let ty = r.Idl.Param.typedef.Rpc.Types.ty in
           let command () =
             let res = impl () in
