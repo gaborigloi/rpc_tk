@@ -9,6 +9,7 @@ maintainer: "Gabor Igloi <gaborigloi@gmail.com>"
 authors: "Gabor Igloi <gaborigloi@gmail.com>"
 license: "CC0"
 homepage: "https://github.com/gaborigloi/rpc_tk"
+dev-repo: "git+https://github.com/gaborigloi/rpc_tk.git"
 bug-reports: "https://github.com/gaborigloi/rpc_tk/issues"
 build: [
   ["dune" "build" "-p" name "-j" jobs]
