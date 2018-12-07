@@ -8,8 +8,8 @@ the implementation of a given interface declared using rpclib's IDL.
 maintainer: "Gabor Igloi <gaborigloi@gmail.com>"
 authors: "Gabor Igloi <gaborigloi@gmail.com>"
 license: "CC0"
-homepage: "https://github.com/gaborigloi/"
-bug-reports: "https://github.com/gaborigloi/"
+homepage: "https://github.com/gaborigloi/rpc_tk"
+bug-reports: "https://github.com/gaborigloi/rpc_tk/issues"
 build: [
   ["dune" "build" "-p" name "-j" jobs]
 ]
