@@ -15,5 +15,5 @@ build: [
 ]
 depends: [
   "labltk"
-  "rpc"
+  "rpclib"
 ]
