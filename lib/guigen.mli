@@ -1,3 +1,6 @@
+(** Main module for generating a GUI.
+    {{:../../readme.html} See usage} *)
+
 (** We need to box the widget because the [implementation] cannot have a type
     parameter *)
 type boxedwidget = W : 'a Widget.widget -> boxedwidget

@@ -16,5 +16,6 @@ build: [
 ]
 depends: [
   "labltk"
+  "md2mld" {with-doc}
   "rpclib"
 ]
