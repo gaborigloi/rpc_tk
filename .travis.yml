@@ -1,0 +1,13 @@
+language: c
+sudo: false
+services:
+  - docker
+install:
+  - wget https://raw.githubusercontent.com/ocaml/ocaml-ci-scripts/master/.travis-docker.sh
+script: bash -ex .travis-docker.sh
+env:
+  matrix:
+    - DISTRO="debian-stable" OCAML_VERSION=4.08
+    - DISTRO="fedora" OCAML_VERSION=4.07
+    - DISTRO="ubuntu-lts" OCAML_VERSION=4.06
+    - DISTRO="alpine" OCAML_VERSION=4.07
