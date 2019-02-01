@@ -12,5 +12,6 @@ env:
     - DISTRO="debian-stable" OCAML_VERSION=4.06
     - DISTRO="alpine" OCAML_VERSION=4.07
     - DISTRO="ubuntu-lts" OCAML_VERSION=4.07
+    - DISTRO="fedora" OCAML_VERSION=4.07
 matrix:
   fast_finish: true
