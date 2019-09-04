@@ -1,4 +1,5 @@
 # rpc_tk
+[![Build Status](https://travis-ci.org/gaborigloi/rpc_tk.svg?branch=master)](https://travis-ci.org/gaborigloi/rpc_tk)
 
 From this interface definition:
 
